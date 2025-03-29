@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QX Broker Clone</title>
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f4b0.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              blue: {
+                600: '#2563eb',
+                800: '#1e40af',
+              },
+              orange: {
+                500: '#f97316',
+                600: '#ea580c',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-100">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-8">
+                <a href="#" class="text-2xl font-bold text-blue-600">QX BROKER</a>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#" class="hover:text-blue-600">Trading</a>
+                    <a href="#" class="hover:text-blue-600">Platforms</a>
+                    <a href="#" class="hover:text-blue-600">Education</a>
+                    <a href="#" class="hover:text-blue-600">About Us</a>
+                </nav>
+            </div>
+            <div class="flex items-center space-x-4">
+                <select class="border rounded px-2 py-1 text-sm">
+                    <option>EN</option>
+                    <option>ES</option>
+                    <option>RU</option>
+                </select>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Login</button>
+                <button class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">Register</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-800 to-blue-600 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Trade Global Markets</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Access 1000+ instruments across Forex, Stocks, Commodities and more</p>
+            <div class="flex justify-center space-x-4">
+                <button class="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100">Open Account</button>
+                <button class="border border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600">Demo Account</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trading Instruments Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Trading Instruments</h2>
+            <div class="grid md:grid-cols-4 gap-6">
+                <!-- Forex Card -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Forex</h3>
+                    <p class="text-gray-600">Trade major, minor and exotic currency pairs with tight spreads</p>
+                </div>
+                
+                <!-- Stocks Card -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Stocks</h3>
+                    <p class="text-gray-600">Trade shares of the world's largest companies</p>
+                </div>
+                
+                <!-- Commodities Card -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-oil-can"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Commodities</h3>
+                    <p class="text-gray-600">Trade gold, oil and other commodities</p>
+                </div>
+                
+                <!-- Indices Card -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Indices</h3>
+                    <p class="text-gray-600">Trade global market indices</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">QX Broker</h3>
+                    <p class="text-gray-400">A leading online trading provider</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Trading</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Account Types</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Platforms</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Instruments</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Education</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Webinars</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Tutorials</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Market Analysis</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Regulation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 QX Broker. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
